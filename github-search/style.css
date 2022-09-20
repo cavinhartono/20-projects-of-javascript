@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@300;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBx {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputBx {
+  position: relative;
+  width: 700px;
+  padding: 20px;
+}
+
+.inputBx .search {
+  outline: none;
+  border: 1px solid #ddd;
+  box-shadow: -8px -8px 45px #fff, 8px 8px 45px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.2em;
+}
+
+#output {
+  position: relative;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBx {
+  position: relative;
+  max-width: 600px;
+  height: 300px;
+  gap: 50px;
+  padding: 20px 40px;
+  background: #fff;
+  box-shadow: -8px -8px 45px #fff, 8px 8px 45px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.cardBx .imgBx {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+}
+
+.cardBx .imgBx .avatar {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.user-info {
+  position: relative;
+  width: 100%;
+}
+
+.user-info h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.user-info ul {
+  position: relative;
+  display: flex;
+  gap: 15px;
+}
+
+.user-info ul li {
+  list-style: none;
+  display: flex;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.user-info ul li strong {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+#repos {
+  position: relative;
+  width: 100%;
+  gap: 10px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#repos a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+  background: #fff;
+  box-shadow: -8px -8px 45px #fff, 8px 8px 45px rgba(0, 0, 0, 0.1);
+  color: #222;
+  opacity: 0.75;
+  border-radius: 4px;
+}
+
+#repos a:hover {
+  opacity: 1;
+}

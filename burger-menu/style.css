@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e3e3e3;
+}
+
+menu {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+menu.active {
+  background: #f00;
+}
+
+menu span {
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  background: #222;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+menu.active span {
+  background: #fff;
+}
+
+menu.active span:nth-child(1) {
+  transform: translateY(0px) rotate(45deg);
+}
+
+menu span:nth-child(1) {
+  transform: translateY(-25px);
+}
+
+menu.active span:nth-child(2) {
+  transform: translateX(120px);
+}
+
+menu span:nth-child(3) {
+  transform: translateY(25px);
+}
+
+menu.active span:nth-child(3) {
+  transform: translateY(0px) rotate(315deg);
+}

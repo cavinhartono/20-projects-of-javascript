@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@300;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .cardBx {
+  position: relative;
+  width: 320px;
+  height: 220px;
+  padding: 40px 30px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: -6px -6px 25px #fff, 6px 6px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.cardBx .iconBx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color: #f00;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+.cardBx.aktif .iconBx {
+  transform: translateY(-100%);
+}
+
+.cardBx .teksBx {
+  position: relative;
+  padding: 15px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cardBx.aktif .teksBx {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-100%);
+}
+
+.cardBx .teksBx .dear {
+  position: relative;
+  display: inline;
+  font-size: 1.2em;
+  color: #222;
+}
+
+.cardBx .teksBx #kalimat {
+  position: relative;
+  display: inline;
+  border-right: 5px solid #222;
+  text-align: justify;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: rgba(34, 34, 34, 0.75);
+  animation: blink 0.5s infinite linear;
+}
+
+@keyframes blink {
+  100% {
+    border-right: 0px;
+  }
+}
