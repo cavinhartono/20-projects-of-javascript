@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carousel</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="carouselBx">
+        <div class="carousel_item visible">
+          <img src="img/banner.jpg" class="photo" />
+        </div>
+        <div class="carousel_item">
+          <img src="img/banner2.jpg" class="photo" />
+        </div>
+        <div class="carousel_item">
+          <img src="img/banner3.jpg" class="photo" />
+        </div>
+      </div>
+      <div class="carousel_action">
+        <button class="btn" id="prev">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <title>ionicons-v5-a</title>
+              <polyline
+                points="244 400 100 256 244 112"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 48px;
+                "
+              />
+              <line
+                x1="120"
+                y1="256"
+                x2="412"
+                y2="256"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 48px;
+                "
+              />
+            </svg>
+          </span>
+        </button>
+        <button class="btn" id="next">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <title>ionicons-v5-a</title>
+              <polyline
+                points="268 112 412 256 268 400"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 48px;
+                "
+              />
+              <line
+                x1="392"
+                y1="256"
+                x2="100"
+                y2="256"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 48px;
+                "
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

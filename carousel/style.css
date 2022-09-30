@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e4e4e4;
+}
+
+.carouselBx {
+  position: relative;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.carousel_item .photo {
+  max-width: 100%;
+}
+
+.carousel_item,
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.carousel_action {
+  position: relative;
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(25px, -180px);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn .icon svg {
+  width: 32px;
+  height: 32px;
+  color: #222;
+}
