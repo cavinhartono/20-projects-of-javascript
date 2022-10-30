@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+  max-width: 400px;
+  height: 200px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: -8px -8px 45px rgba(255, 255, 255, 1),
+    8px 8px 45px rgba(34, 34, 34, 0.1);
+  transition: 0.5s;
+}
+
+.container.active {
+  height: 100%;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.header .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(34, 34, 34, 1);
+}
+
+.header .subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(34, 34, 34, 0.75);
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputURL {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: rgba(34, 34, 34, 1);
+}
+
+.inputURL::placeholder {
+  color: rgba(34, 34, 34, 0.75);
+}
+
+.btn {
+  outline: none;
+  border: none;
+  position: relative;
+  padding: 8px;
+  background: rgb(0, 157, 255);
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.output {
+  margin-top: 15px;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.container.active .output {
+  opacity: 1;
+  pointer-events: auto;
+}

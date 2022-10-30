@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.photo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.reviewBx {
+  position: relative;
+  padding: 20px 0;
+  width: 600px;
+  height: 100%;
+  padding: 20px 40px;
+  box-shadow: -8px -8px 45px rgba(255, 255, 255, 1),
+    8px 8px 45px rgba(34, 34, 34, 0.1);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+.header_review {
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentBx {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileBx .author {
+  font-size: 24px;
+}
+
+.profileBx .job {
+  font-size: 16px;
+}
+
+.content_header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.content_header .title {
+  position: relative;
+  color: #222;
+  font-size: 24px;
+}
+
+.content_header .title::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 5px;
+  background: #222;
+  border-radius: 8px;
+}
+
+.backgroundBx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(30%);
+  z-index: -1;
+}
+
+.backgroundBx svg {
+  height: 200px;
+}
