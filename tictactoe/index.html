@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <section class="container">
+      <header class="header">
+        <button class="btn active" id="cross" onclick="choosePlayer('x')">
+          <span class="icon">X</span>
+        </button>
+        <h1 class="title">Pilih</h1>
+        <button class="btn" id="circle" onclick="choosePlayer('o')">
+          <span class="icon">O</span>
+        </button>
+      </header>
+      <div id="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </section>
+  </body>
+</html>
