@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All List Students</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="content-body">
+      <div class="container">
+        <div action="" class="inputBx">
+          <input type="text" placeholder="Pencarian Nama">
+        </div>
+        <div class="dataTable">
+          <table>
+            <thead>
+              <tr>
+                <th width="120">#</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th style="text-align: right;">No. Telepon</th>
+                <th style="text-align: center;">Terakhir Diakses</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td><?= ++$i ?></td>
+                  <td><?= $student->name ?></td>
+                  <td style="text-transform: lowercase;"><?= $student->email ?></td>
+                  <td style="text-align: right;"><?= $student->phone ?></td>
+                  <td style="text-align: center;"><?= timeAgo($student->created_at) ?></td>
+                  <td>
+                    <a href="?edit=<?= $student->id ?>" class="btn warning"><ion-icon name="create-outline"></ion-icon></a>
+                    <a href="?delete=<?= $student->id ?>" class="btn danger" onclick="return confirm('Yakin hapus?')"><ion-icon name="trash-bin-outline"></ion-icon></a>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
